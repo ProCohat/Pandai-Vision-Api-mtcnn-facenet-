@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>PANDAI</title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+	    <!-- ============================================================== -->
+	    <!-- navbar -->
+	    <!-- ============================================================== -->
+	    <div class="dashboard-header">
+	        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+	            <a class="navbar-brand" href="index.html">PANDAI </a>
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	                <span class="navbar-toggler-icon"></span>
+	            </button>
+	            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+	                
+	            </div>
+	        </nav>
+	    </div>
+	    <!-- ============================================================== -->
+	    <!-- end navbar -->
+	    <!-- ============================================================== -->
+	    <!-- ============================================================== -->
+	    <!-- left sidebar -->
+	    <!-- ============================================================== -->
+	    <div class="nav-left-sidebar sidebar-dark">
+	        <div class="menu-list">
+	            <nav class="navbar navbar-expand-lg navbar-light">
+	                <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+	                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	                    <span class="navbar-toggler-icon"></span>
+	                </button>
+	                <div class="collapse navbar-collapse" id="navbarNav">
+	                    <ul class="navbar-nav flex-column">
+	                        <li class="nav-divider">
+	                        </li>
+	                        <li class="nav-item ">
+	                            <a class="nav-link active" href="{% url 'index' %}" ><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
+	                           
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="{% url 'add_emp' %}"><i class="fa fa-fw fa-rocket"></i>Add Employee</a>
+	                            
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="{% url 'add_photos' %}"><i class="fas fa-fw fa-chart-pie"></i>Add Photos</a>
+	                        </li>
+	                        <li class="nav-item ">
+	                            <a class="nav-link" href="{% url 'detected' %}"><i class="fab fa-fw fa-wpforms"></i>Check Employee Log</a>
+	            
+	                        </li>
+							<li class="nav-item ">
+	                            <a class="nav-link" href="{% url 'temperature' %}"><i class="fab fa-fw fa-wpforms"></i>Check Employee temperature</a>
+	            
+	                        </li>
+							<li class="nav-item ">
+	                            <a class="nav-link" href="{% url 'signin_signout' %}"><i class="fab fa-fw fa-wpforms"></i>Check Employee Signin - Signout time</a>
+	            
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="{% url 'train_model' %}"><i class="fas fa-fw fa-table"></i>Train Model</a>
+	                        </li>
+	                        <li class="nav-divider">
+	                            Start Detection Tool
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="{% url 'identify' %}"><i class="fas fa-fw fa-file"></i> Start Camera </a>
+	                            
+	                        </li>
+	                        
+	                        
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </nav>
+	        </div>
+	    </div>
+	    <!-- ============================================================== -->
+	    <!-- end left sidebar -->
+	    <!-- ============================================================== -->
+	    <!-- ============================================================== -->
+	    <!-- wrapper  -->
+	    <!-- ============================================================== -->
+	    <div class="dashboard-wrapper">
+	        <div class="dashboard-influence">
+	            <div class="container-fluid dashboard-content">
+	                <!-- ============================================================== -->
+	                <!-- pageheader  -->
+	                <!-- ============================================================== -->
+	                <div class="row">
+	                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+	                       
+	                    </div>
+	                </div>
+	                <!-- ============================================================== -->
+	                <!-- end pageheader  -->
+	                <!-- ============================================================== -->
+	                <!-- ============================================================== -->
+	                <!-- content  -->
+	                <!-- ============================================================== -->
+	                <!-- ============================================================== -->
+	                <!-- influencer profile  -->
+	                <!-- ============================================================== -->
+	                <div class="row">
+	                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+	                        
+	                        </div>
+	                    </div>
+	                    <!-- ============================================================== -->
+	                    <!-- end influencer profile  -->
+	                    <!-- ============================================================== -->
+	                    <!-- ============================================================== -->
+	                    <!-- widgets   -->
+	                    <!-- ============================================================== -->
+	                    <div class="row">
+	                        <!-- ============================================================== -->
+	                        <!-- four widgets   -->
+	                        <!-- ============================================================== -->
+	                        <!-- ============================================================== -->
+	                        <!-- total views   -->
+	                        <!-- ============================================================== -->
+	                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                            <div class="card">
+	                                <div class="card-body">
+	                                    <div class="d-inline-block">
+	                                        <h5 class="text-muted">Total Scans</h5>
+	                                        <h2 class="mb-0"> 000</h2>
+	                                    </div>
+	                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-info-light mt-1">
+	                                        <i class="fa fa-eye fa-fw fa-sm text-info"></i>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- ============================================================== -->
+	                        <!-- end total views   -->
+	                        <!-- ============================================================== -->
+	                        <!-- ============================================================== -->
+	                        <!-- total followers   -->
+	                        <!-- ============================================================== -->
+	                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                            <div class="card">
+	                                <div class="card-body">
+	                                    <div class="d-inline-block">
+	                                        <h5 class="text-muted">Total Employee</h5>
+	                                        <h2 class="mb-0"> 89</h2>
+	                                    </div>
+	                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
+	                                        <i class="fa fa-user fa-fw fa-sm text-primary"></i>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- ============================================================== -->
+	                        <!-- end total followers   -->
+	                        <!-- ============================================================== -->
+	                        <!-- ============================================================== -->
+	                        <!-- partnerships   -->
+	                        <!-- ============================================================== -->
+	                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                            <div class="card">
+	                                <div class="card-body">
+	                                    <div class="d-inline-block">
+	                                        <h5 class="text-muted">Unknown scans</h5>
+	                                        <h2 class="mb-0">14</h2>
+	                                    </div>
+	                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-secondary-light mt-1">
+	                                        <i class="fa fa-handshake fa-fw fa-sm text-secondary"></i>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- ============================================================== -->
+	                        <!-- end partnerships   -->
+	                        <!-- ============================================================== -->
+	                        <!-- ============================================================== -->
+	                        <!-- total earned   -->
+	                        <!-- ============================================================== -->
+	                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                            <div class="card">
+	                                <div class="card-body">
+	                                    <div class="d-inline-block">
+	                                        <h5 class="text-muted">Total Present</h5>
+	                                        <h2 class="mb-0"> 15</h2>
+	                                    </div>
+	                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-brand-light mt-1">
+	                                        <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- ============================================================== -->
+	                        <!-- end total earned   -->
+	                        <!-- ============================================================== -->
+	                    </div>
+
+	                            
+	                        <!-- ============================================================== -->
+	                        <!-- end wrapper  -->
+	                        <!-- ============================================================== -->
+	                    </div>
+	                    <!-- ============================================================== -->
+	                    <!-- end main wrapper  -->
+	                    <!-- ============================================================== -->
+	                    
+</body>
+ 
+</html>
+{% endblock %}

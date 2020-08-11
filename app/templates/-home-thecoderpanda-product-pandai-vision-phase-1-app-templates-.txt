@@ -1,0 +1,1 @@
+/home/thecoderpanda/product/pandai-vision-phase-1/app/templates/base.html

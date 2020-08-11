@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<div class="container" style="background-color: white; padding: 50px; margin-top: 100px;">
+	<h1>PANDAI Employee Recognition System</h1>
+	<hr>
+	<div class="container">
+		<div><a class="btn btn-primary"  href="{% url 'identify' %}" style="font-size: 20px; margin-bottom: 10px;">Start Camera</a> &nbsp Start the camera to start the detection Press Q to end the camera</div>
+		<div><a class="btn btn-primary"  href="{% url 'detected' %}" style="font-size: 20px; margin-bottom: 10px;">Detected Faces</a> &nbsp check the entire log of the employees </div>
+		<div><a class="btn btn-primary" href="{% url 'add_emp' %}" style="font-size: 20px; margin-bottom: 10px;">Add Employee</a> &nbsp Add your Employees to the database</div>
+		<div><a class="btn btn-primary"  href="{% url 'add_photos' %}" style="font-size: 20px; margin-bottom: 10px;">Add photos</a> &nbsp Add photos to your employee's ID </div>
+		<div><a class="btn btn-primary"  href="{% url 'train_model' %}" style="font-size: 20px; margin-bottom: 10px;">Train model</a> &nbsp Train the machine to recognize the faces </div>
+	</div>
+</div>
+{% endblock %}
