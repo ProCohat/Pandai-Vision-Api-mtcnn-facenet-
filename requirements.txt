@@ -1,0 +1,14 @@
+numpy
+opencv-python
+opencv-contrib-python
+cmake
+dlib
+face-recognition
+cachetools==3.1.1
+tqdm==4.36.1
+scikit-learn==0.21.3
+django==2.2.5
+tensorflow==1.14
+torch==1.6.0
+torchvision==0.7.0
+json
